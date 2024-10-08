@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+  </head>
+  <body>
+    <div class="loader"></div>
+
+    <div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+    <nav id="desktop-nav">
+      <div class="logo">Tien Dat</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#technology">Technology</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <img src="assets/dark-mode.png" id="icon">
+
+        </ul>
+       
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Tien Dat</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#technology" onclick="toggleMenu()">Technology</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+        
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/ic.png" alt="" class="fixed-image" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title_1"></h1>
+        <p class="section__text__p2">Exploring AI</p>
+        <div class="btn-container">
+          <button class="btn btn-color-1" onclick="location.href='./#about'">
+            About me
+          </button>
+        </div>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon" id="linkedin"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon" id="github"
+            onclick="location.href='https://github.com/'"
+          />
+          <img 
+          src="assets/facebook.png" 
+          alt="My Facebook"
+          class="icon" id="facebook"
+          onclick="location.href='https://www.facebook.com/profile.php?id=100001991477288'">
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/elon.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/cpu.png"
+                alt="technology icon" 
+                class="icon" id="cpu"
+              />
+              <h3>Technology</h3>
+              <p>1+ years <br />Deverloper AI</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/open-book.png"
+                alt="Education icon"
+                class="icon" id="Tech"
+              />
+              <h3>Education</h3>
+              <p>Phenikaa University<br />Computer Science</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              👋 Hello! I'm a Computer Science student with a deep passion for Artificial Intelligence. <br/>I'm fascinated by AI's transformative potential and the endless possibilities it offers to reshape our lives.
+
+                <br/> <br/>I enjoy exploring various AI concepts, from machine learning and natural language processing to computer vision.<br/> My goal is to leverage AI to solve real-world problems and contribute to technological advancements. <br/>I’m excited about the future of AI and eager to be part of this evolving landscape! </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        id="row"
+        onclick="location.href='./#technology'"
+      />
+    </section>
+    <section id="technology">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Technology</h1>
+      <div class="technology-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="technology-sub-title">Ai Deverloper</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/python.png"
+                  alt="technology icon"
+                  class="icon" id="python"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Medium</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/java.png"
+                  alt="technology icon"
+                  class="icon" id="java"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/c-.png"
+                  alt="technology icon"
+                  class="icon" id="clang"
+                />
+                <div>
+                  <h3>C/C++</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/html.png"
+                  alt="technology icon"
+                  class="icon" id="html"
+                />
+                <div>
+                  <h3>Html</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/css-3.png"
+                  alt="technology icon"
+                  class="icon" id="css"
+                />
+                <div>
+                  <h3>Css</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/java-script.png"
+                  alt="technology icon"
+                  class="icon" id="js"
+                />
+                <div>
+                  <h3>Java Script</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="technology-sub-title">Frame Work</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/pytorch.852x1024.png"
+                  alt="technology icon"
+                  class="icon" id="pytorch"
+                />
+                <div>
+                  <h3>PyTorch</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/tensorflow.914x1024.png"
+                  alt="technology icon"
+                  class="icon" id="tensorflow"
+                />
+                <div>
+                  <h3>TensorFlow</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="technology icon"
+                  class="icon" id="keras"
+                />
+                <div>
+                  <h3>Keras</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/git.png"
+                  alt="technology icon"
+                  class="icon" id="git"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>medium</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        id="row"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="technology-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/1.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="technology-sub-title project-title">Fake News Detection</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Poicitaco/FAKE-NEWS-DETECTION-AI'"
+              >
+                Github
+              </button>
+            
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/2.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="technology-sub-title project-title">Paking Car GMS2</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Poicitaco/Parking-car'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/web.jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="technology-sub-title project-title">My Website</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        id="row"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="/assets/facebook.png"
+            alt="Facebook icon"
+            class="icon contact-icon facebook-icon" 
+            id="ct2"
+          />
+          <p><a href="https://www.facebook.com/profile.php?id=100001991477288" target="_blank">Facebook</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon" id="email"
+          />
+          <p><a href="mailto:Itentad.work@gmail.com" target="_blank">Email</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img 
+            src="./assets/github.png"
+            alt="Github"
+            class="icon contact github-icon"
+            id="ct1"
+          />
+          <p><a href="https://github.com/Poicitaco" target="_blank">Github</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#technology">Technology</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+    
+  </body>
+</html>
